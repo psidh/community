@@ -2,12 +2,12 @@ import '../rotate.css';
 import { IoArrowForwardCircleOutline } from 'react-icons/io5';
 function Logo() {
   return (
-    <div>
+    <div className='container mx-auto my-10 w-4/5'>
       <div
         className="flex flex-col-reverse lg:flex-row lg:justify-between lg:items-between justify-center items-center 
-    py-4 container md:mx-auto"
+    py-4 container mx-auto"
       >
-        <div className="sm:w-full lg:w-1/2 sm:px-2 md:px-4 lg:px-8 pb-8 flex flex-col justify-start items-start mx-8">
+        <div className="sm:w-full lg:w-1/2  pb-8 flex flex-col justify-start items-start ">
           <p className="text-md font-normal py-4 text-justify text-lg md:text-xl">
             <span className="text-orange-500 text-5xl">
               {' '}
@@ -41,7 +41,7 @@ function Logo() {
           src="/chakra.jpeg"
           alt="Logo"
           className={`chakra-logo w-1/2 h-1/2 md:w-1/3 md:h-1/3 
-        rounded-full animate-rotation-chakra duration-300 mb-8 stop-rotate-on-hover m-6`}
+        rounded-full animate-rotation-chakra duration-300 mb-8 stop-rotate-on-hover m-0 md:m-6`}
         />
       </div>
     </div>

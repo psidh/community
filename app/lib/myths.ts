@@ -13,7 +13,7 @@ const myths = [
   },
   {
     id: 2,
-    title: "Caste System in India",
+    title: "Caste System",
     image: 'images/mythCardImages/caste.avif',
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -33,6 +33,30 @@ const myths = [
     commodo consequat.`,
     author: 'Mohit Kumar',
     date: `Aug 02 2023`,
+    link: '/myths'
+  },
+  {
+    id: 4,
+    title: "Rām Mandir",
+    image: 'images/mythCardImages/ram-mandir.jpg',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+    commodo consequat.`,
+    author: 'Ajay Singh',
+    date: `Aug 05 2023`,
+    link: '/myths'
+  },
+  {
+    id: 5,
+    title: "Diwali - Not Pollution",
+    image: 'images/mythCardImages/diwali.png',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+    commodo consequat.`,
+    author: 'Ajay Singh',
+    date: `Aug 05 2023`,
     link: '/myths'
   },
 ];

@@ -19,10 +19,10 @@ const Card: React.FC<MythCardProps> = ({ mythcard }) => {
   return (
     <div className="container mx-auto my-10 w-4/5">
       <div className="flex items-start justify-start flex-col">
-        <h1 className="text-2xl lg:text-5xl pb-6 ml-4 font-semibold">
+        <h1 className="text-4xl lg:text-5xl pb-6 ml-4 font-semibold">
           Popular Myths
         </h1>
-        <ul className="w-full h-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+        <ul className="w-full h-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
           {mythcard.map((idea, index) => (
             <li key={idea.id}>
               <a href={idea.link}>
@@ -32,10 +32,12 @@ const Card: React.FC<MythCardProps> = ({ mythcard }) => {
                 border-gray-300 
                 hover:border-gray-500
                 hover:bg-gray-100/80 
+                hover:dark:bg-gray-900/70
 
-                dark:hover:bg-black/80
                 dark:border-gray-600  
-                hover:dark:border-gray-200 rounded-lg transition duration-300
+                hover:dark:border-gray-200 
+                hover:-translate-y-4
+                rounded-lg transition duration-300
                 cursor-pointer justify-start items-start flex flex-col m-4
                 "
                 >
