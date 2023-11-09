@@ -1,8 +1,8 @@
 const myths = [
   {
     id: 1,
-    title: 'Māhābhart',
-    image: 'images/epicCardImages/war.png',
+    title: 'Māhābharat',
+    image: 'images/epicCardImages/maha.webp',
     description: `Mahabharata:  World's Largest Epic is one of the most significant and revered ancient Indian epic poems, attributed to the sage Krishna Dwapayana Ved Vyasa. 
     It consists of over 100,000 verses and is often considered the longest epic poem in the world. 
     The narrative of the Mahabharata revolves around the Kurukshetra War, a great and devastating 

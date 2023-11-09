@@ -23,41 +23,27 @@ const EpicCard: React.FC<EpicCardProps> = ({ epiccards }) => {
         <ul className="w-full h-full flex flex-col justify-center items-center">
           {epiccards.map((epiccard, index) => (
             <li key={epiccard.id}>
-              <a href={epiccard.link}>
-                <div
-                  className="p-4 border 
-
-                border-gray-300 
-                hover:border-gray-500
-                hover:bg-gray-100/80 
-
-                dark:hover:bg-black/80
-                dark:border-gray-600  
-                hover:dark:border-gray-200 rounded-lg transition duration-300
-                cursor-pointer justify-start items-start flex m-4
-                "
-                >
-                  <div className="flex ">
-                    <img
-                      src={epiccard.image}
-                      alt="EpicCard Title"
-                      className="w-full h-full m-4 rounded-2xl"
-                    />{' '}
-                  </div>
-
-                  <div className="flex flex-col items-start justify-center">
-                    <h2 className="text-3xl font-semibold py-2 mt-4 dark:text-gray-200">
-                      {epiccard.title}
-                    </h2>
-                    <p className="text-md py-2 text-gray-500 dark:text-gray-400">
-                      {epiccard.description}
-                    </p>
-                    <p className="text-lg py-2 dark:text-gray-300 font-bold text-left">
-                      <BiPencil className="inline-block mr-3" />{' '}
+              <a href={epiccard.link} className="no-underline">
+                <div className="p-4 border border-gray-300 hover:border-gray-500 hover:bg-gray-100/80 
+                dark:hover:bg-black/80 dark:border-gray-700 hover:dark:border-gray-200 rounded-lg transition duration-300 cursor-pointer justify-start items-start flex flex-col m-4">
+                  <img
+                    src={epiccard.image}
+                    alt="EpicCard Title"
+                    className="w-full h-auto  mb-4 rounded-md object-contain"
+                  />
+                  <h2 className="text-2xl font-semibold dark:text-gray-200">
+                    {epiccard.title}
+                  </h2>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
+                    {epiccard.description}
+                  </p>
+                  <div className="flex items-center mt-2">
+                    <p className="text-sm dark:text-gray-300 font-bold">
+                      <BiPencil className="inline-block mr-2 text-xl" />{' '}
                       {epiccard.author}
                     </p>
-                    <p>
-                      <BiCalendar className="inline-flex mr-3 text-xl" />{' '}
+                    <p className="ml-4 text-sm dark:text-gray-300">
+                      <BiCalendar className="inline-block mr-2 text-xl" />{' '}
                       {epiccard.date}
                     </p>
                   </div>
